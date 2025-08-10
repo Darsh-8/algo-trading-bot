@@ -1,0 +1,11 @@
+pandas
+yfinance
+ta
+python-dateutil
+scikit-learn
+joblib
+gspread
+oauth2client
+requests
+openpyxl
+reportlab
