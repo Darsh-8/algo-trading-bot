@@ -122,7 +122,8 @@ To contribute:
 
 Please ensure your code adheres to existing style guidelines and includes relevant tests if applicable.
 
-## 📝 License
+<!--  ## 📝 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+-->
 
