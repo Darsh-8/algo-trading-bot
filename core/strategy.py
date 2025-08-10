@@ -29,9 +29,9 @@ def apply_strategy(df: pd.DataFrame) -> pd.DataFrame:
 
         df['Signal'] = 0
         buy_mask = (
-                (df['RSI'] < 30) & 
-                (df['SMA_20'] > df['SMA_50']) &
-                (df['SMA_20'].shift(1) <= df['SMA_50'].shift(1))
+                (df['RSI'] < 50) 
+                # & (df['SMA_20'] > df['SMA_50']) &
+                # (df['SMA_20'].shift(1) <= df['SMA_50'].shift(1))
         )
         df.loc[buy_mask, 'Signal'] = 1
         logger.info("Applied strategy; found %d buy signals",
@@ -40,3 +40,4 @@ def apply_strategy(df: pd.DataFrame) -> pd.DataFrame:
     except Exception:
         logger.exception("Error applying strategy")
         raise
+
